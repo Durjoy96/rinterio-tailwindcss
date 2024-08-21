@@ -13,11 +13,25 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- Tailwindcss Cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontAwesome cdn-->
+    <script src="https://kit.fontawesome.com/4a82536f30.js" crossorigin="anonymous"></script>
     <style>
         .manrope {
             font-family: "Manrope", sans-serif;
         }
     </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary_color: '#ABEF5F',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body class="manrope">
@@ -25,7 +39,77 @@
 
     </header>
     <main>
-       
+        <!-- Our Latest Portfolio -->
+        <section class="bg-gray-50 lg:bg-white lg:py-24">
+            <div class="max-w-screen-xl mx-auto px-5">
+                <!-- text -->
+                <div class="max-w-2xl mx-auto text-center">
+                    <span
+                        class="text-base font-bold text-[494949] bg-primary_color/20 py-2 px-4 inline-block rounded-3xl"><i
+                            class="fa-solid fa-arrow-right-long"></i> Explore our Latest works</span>
+                    <h2 class="text-2xl font-bold text-[#212121] mt-4 md:text-4xl lg:text-4xl">Our Latest Portfolio</h2>
+                    <p class="text-sm font-medium text-[#494949] mt-4 md:mt-6 lg:mt-6 lg:text-base">The barn house
+                        captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
+                        sleek metal accents.</p>
+                </div>
+                <!-- cards container -->
+                <div class="grid gap-6">
+                    <!-- cards part 1 -->
+                    <div class="mt-4 grid gap-6 md:grid-cols-2 md:mt-6 lg:grid-cols-[1fr_375px] lg:mt-8">
+                        <!-- card 1 -->
+                        <div class="p-6 border rounded-2xl flex flex-col gap-6 md:flex-row md:col-span-2 lg:col-span-1 lg:flew-row">
+                            <img src="assets/img1.png" alt="house">
+                            <div>
+                                <h3 class="text-xl font-extrabold text-[#494949] md:text-2xl lg:text-2xl">Commercial
+                                </h3>
+                                <p class="text-base font-medium mt-4 text-[#737373]">The barn house captivates with its
+                                    blend of rustic charm and modern. The barn
+                                    house captivates with its blend of rustic charm and modern .</p>
+                                <a href=""
+                                    class="link-hover text-base font-extrabold text-[#212121] mt-5 inline-block md:text-xl lg:text-xl">View
+                                    Details <span
+                                        class="bg-primary_color inline-block w-8 h-8 leading-8 rounded-full text-center text-base -rotate-45 ml-2"><i
+                                            class="fa-solid fa-arrow-right-long"></i></span></a>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="border p-6 rounded-2xl h-[237px] md:h-auto">
+                            <img class="w-full h-full" src="assets/img2.png" alt="house">
+                        </div>
+                        <!-- card 3 -->
+                        <div class="border p-6 rounded-2xl h-[220px] md:h-auto lg:hidden">
+                            <img class="w-full h-full" src="assets/img5.png" alt="house">
+                        </div>
+                    </div>
+                    <!-- card part 2 -->
+                    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                        <!-- card 1 -->
+                        <div class="p-6 border rounded-2xl flex flex-col gap-6 md:flex-row md:col-span-2 lg:flew-row lg:col-span-2">
+                            <img src="assets/img4.png" alt="house">
+                            <div class="">
+                                <h3 class="text-xl font-extrabold text-[#494949] md:text-2xl lg:text-2xl">Commercial
+                                </h3>
+                                <p class="text-base font-medium mt-4 text-[#737373]">The barn house captivates with its blend of rustic charm and modern. </p>
+                                <a href=""
+                                    class="link-hover text-base font-extrabold text-[#212121] mt-5 inline-block md:text-xl lg:text-xl">View
+                                    Details <span
+                                        class="bg-primary_color inline-block w-8 h-8 leading-8 rounded-full text-center text-base -rotate-45 ml-2"><i
+                                            class="fa-solid fa-arrow-right-long"></i></span></a>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="border p-6 rounded-2xl h-[237px] md:h-auto lg:row-start-1">
+                            <img class="w-full h-full" src="assets/img3.png" alt="house">
+                        </div>
+                        <!-- card 3 -->
+                        <div class="border p-6 rounded-2xl h-[237px] md:h-auto">
+                            <img class="w-full h-full" src="assets/img5.png" alt="house">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
     </main>
     <footer>
 
