@@ -113,8 +113,8 @@
         </nav>
         <!-- banner -->
         <div class="max-w-screen-xl mx-auto px-5 grid place-items-center mt-8 lg:10">
-            <div>
-                <img src="assets/banner.png" alt="house">
+            <div class="flex justify-center">
+                <img class="w-10/12 md:w-auto" src="assets/banner.png" alt="house">
             </div>
             <div>
                 <h1
@@ -172,15 +172,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center lg:inline-block">
-                    <img src="assets/Rectangle.png" alt="Rectangle">
-                </div>
+                <div class="bg-no-repeat bg-center bg-cover h-[223px] rounded-2xl md:h-[385px] lg:h-auto" style="background-image:url('assets/Rectangle.png')"></div>
             </div>
         </section>
         <!-- success -->
         <section class="bg-stone-100 px-5">
             <div
-                class="max-w-screen-xl mx-auto bg-white rounded-3xl p-6 grid gap-y-10 md:grid-cols-2 lg:grid-cols-4 lg:p-8">
+                class="max-w-screen-xl mx-auto bg-white rounded-3xl p-6 shadow-lg grid gap-y-10 md:grid-cols-2 lg:grid-cols-4 lg:p-8">
                 <!-- card 1 -->
                 <div class="space-y-3 grid place-items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -425,15 +423,15 @@
                 <!-- form -->
                 <form class="max-w-screen-lg mx-auto mt-8 grid grid-cols-1 gap-6 md:grid-cols-2" action=""
                     method="post">
-                    <input class="bg-white p-5 rounded-full focus:outline-primary_color" type="text"
+                    <input class="bg-white p-5 rounded-full border focus:outline-primary_color" type="text"
                         placeholder="First Name*">
-                    <input class="bg-white p-5 rounded-full focus:outline-primary_color" type="text"
+                    <input class="bg-white p-5 rounded-full border focus:outline-primary_color" type="text"
                         placeholder="Last Name*">
-                    <input class="bg-white p-5 rounded-full focus:outline-primary_color" type="number"
+                    <input class="bg-white p-5 rounded-full border focus:outline-primary_color" type="number"
                         placeholder="Phone Number*">
-                    <input class="bg-white p-5 rounded-full focus:outline-primary_color" type="email"
+                    <input class="bg-white p-5 rounded-full border focus:outline-primary_color" type="email"
                         placeholder="Email Address*">
-                    <textarea class="bg-white p-5 rounded-3xl focus:outline-primary_color resize-none md:col-span-2"
+                    <textarea class="bg-white p-5 rounded-3xl border focus:outline-primary_color resize-none md:col-span-2"
                         cols="30" rows="10" placeholder="Write your message here"></textarea>
                     <button
                         class="py-3 px-5 bg-primary_color text-xl font-extrabold text-primary_content rounded-full md:col-span-2 lg:mt-2">Send
